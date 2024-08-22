@@ -1,5 +1,7 @@
-import { Component,OnInit,Input,Output,EventEmitter } from '@angular/core';
+import { Component,OnInit,Input,Output,EventEmitter, untracked } from '@angular/core';
 import { WishItem } from '../../shared/models/wishItem';
+import { AnimationDriver } from '@angular/animations/browser';
+import { animate, keyframes } from '@angular/animations';
 const filters = [
   (item : WishItem) => item,
   (item : WishItem) => !item.isComplete,
@@ -24,4 +26,6 @@ export class WishFilterComponent implements OnInit {
   this.filter = filters[value];
     this.filterChange.emit(this.filter);
   }
+  
 }
+
