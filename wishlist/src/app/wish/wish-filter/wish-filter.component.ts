@@ -1,5 +1,5 @@
 import { Component,OnInit,Input,Output,EventEmitter, untracked } from '@angular/core';
-import { WishItem } from '../../shared/models/wishItem';
+import { WishItem } from '../../../shared/models/wishItem';
 import { AnimationDriver } from '@angular/animations/browser';
 import { animate, keyframes } from '@angular/animations';
 const filters = [

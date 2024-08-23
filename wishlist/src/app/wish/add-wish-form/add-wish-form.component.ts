@@ -1,5 +1,5 @@
 import { Component ,OnInit,Output,EventEmitter} from '@angular/core';
-import { WishItem } from '../../shared/models/wishItem';
+import { WishItem } from '../../../shared/models/wishItem';
 import { argsArgArrayOrObject } from 'rxjs/internal/util/argsArgArrayOrObject';
 @Component({
   selector: 'add-wish-form',

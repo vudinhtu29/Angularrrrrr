@@ -8,6 +8,7 @@ import {WishService} from './wish.service';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
+
 export class AppComponent implements OnInit {
   items! : WishItem[];
 
